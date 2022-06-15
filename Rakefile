@@ -18,6 +18,6 @@ task ci: ['engine_cart:generate'] do
 end
 
 desc 'Run continuous integration build'
-task ci: ['rubocop', 'spec']
+task ci: [ 'spec']
 
 task default: :ci

@@ -5,6 +5,7 @@ gemspec path: File.expand_path('..', __FILE__)
 group :development, :test do
   gem 'coveralls', require: false
   gem 'simplecov', require: false
+  gem 'ldpath', git: 'git@github.com:/samvera-labs/ldpath.git', branch: '3_0_tests'
 end
 
 # BEGIN ENGINE_CART BLOCK
