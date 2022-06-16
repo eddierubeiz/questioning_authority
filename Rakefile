@@ -8,6 +8,10 @@ RSpec::Core::RakeTask.new(:spec)
 
 desc 'Run style checker'
 RuboCop::RakeTask.new(:rubocop) do |task|
+  
+  # Just for now as we fix this up:
+  task.options = ['--fail-fast']
+
   task.requires << 'rubocop-rspec'
   task.fail_on_error = true
 end
