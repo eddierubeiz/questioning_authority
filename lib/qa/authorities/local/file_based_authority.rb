@@ -2,7 +2,7 @@ module Qa::Authorities
   class Local::FileBasedAuthority < Base
     attr_reader :subauthority
     def initialize(subauthority)
-      super
+      super()
       @subauthority = subauthority
     end
 

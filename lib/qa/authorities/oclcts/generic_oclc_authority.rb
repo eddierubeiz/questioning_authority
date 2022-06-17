@@ -3,7 +3,7 @@ module Qa::Authorities
     attr_reader :subauthority
 
     def initialize(subauthority)
-      super
+      super()
       @subauthority = subauthority
     end
     include WebServiceBase
