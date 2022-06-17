@@ -4,6 +4,7 @@ inherit_gem:
 inherit_from: .rubocop_todo.yml
 
 AllCops:
+  NewCops: disable # for now.
   TargetRubyVersion: 2.6
   DisplayCopNames: true
   Exclude:
