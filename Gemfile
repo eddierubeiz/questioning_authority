@@ -2,6 +2,10 @@ source "https://rubygems.org"
 
 gemspec path: File.expand_path('..', __FILE__)
 
+# Just adding this to all versions for now.
+# We can narrow it down to just ruby 3.1 later.
+gem 'net-smtp'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'simplecov', require: false
@@ -34,10 +38,6 @@ else
     end
   end
 
-
-  # Just adding this to all versions for now.
-  # We can narrow it down to just ruby 3.1 later.
-  gem 'net-smtp'
 
   case ENV['RAILS_VERSION']
   when /^5.[12]/
