@@ -34,6 +34,11 @@ else
     end
   end
 
+
+  # Just adding this to all versions for now.
+  # We can narrow it down to just ruby 3.1 later.
+  gem 'net-smtp'
+
   case ENV['RAILS_VERSION']
   when /^5.[12]/
     gem 'sass-rails', '~> 5.0'
