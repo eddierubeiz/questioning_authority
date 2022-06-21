@@ -54,6 +54,23 @@ jobs:
 workflows:
   ci:
     jobs:
+      # Ruby 3.1 release
+      - bundle_and_test:
+          name: "ruby3-0_rails6-1"
+          ruby_version: 3.1.2
+          rails_version: 6.1.1
+      - bundle_and_test:
+          name: "ruby3-0_rails6-0"
+          ruby_version: 3.1.2
+          rails_version: 6.0.2
+      - bundle_and_test:
+          name: "ruby3-0_rails5-2"
+          ruby_version: 3.1.2
+          rails_version: 5.2.6
+      - bundle_and_test:
+          name: "ruby3-0_rails5-1"
+          ruby_version: 3.1.2
+          rails_version: 5.1.7
 
       # Ruby 3.0 release
       - bundle_and_test:
