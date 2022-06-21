@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   # Pinning psych to 3.3.2 to avoid this bug:
   # https://stackoverflow.com/questions/71191685/visit-psych-nodes-alias-unknown-alias-default-psychbadalias
   s.add_dependency 'psych', '< 4'
-  s.add_dependency 'rails', '>=5.0', "< 6.2"
+  s.add_dependency 'rails', '>=5.0', "<= 7.0"
   s.add_dependency 'rdf'
 
   # the hyrax style guide is based on `bixby`. see `.rubocop.yml`
