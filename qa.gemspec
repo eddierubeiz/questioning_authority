@@ -23,8 +23,12 @@ Gem::Specification.new do |s|
   s.add_dependency 'ldpath'
   s.add_dependency 'net-smtp'
   s.add_dependency 'nokogiri', '~> 1.6'
+  # Pinning psych to 3.3.2 to avoid this bug:
+  # https://stackoverflow.com/questions/71191685/visit-psych-nodes-alias-unknown-alias-default-psychbadalias
+  s.add_dependency 'psych', '< 4'
   s.add_dependency 'rails', '>=5.0', "< 6.2"
   s.add_dependency 'rdf'
+
 
   # the hyrax style guide is based on `bixby`. see `.rubocop.yml`
   s.add_development_dependency 'bixby', '~> 5.0', '>= 5.0.2' # bixby 5 briefly dropped Ruby 2.5
