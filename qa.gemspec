@@ -29,7 +29,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '>=5.0', "< 6.2"
   s.add_dependency 'rdf'
 
-
   # the hyrax style guide is based on `bixby`. see `.rubocop.yml`
   s.add_development_dependency 'bixby', '~> 5.0', '>= 5.0.2' # bixby 5 briefly dropped Ruby 2.5
   s.add_development_dependency 'rails', '!=5.2.0', '!=5.2.1', '!=5.2.2'
