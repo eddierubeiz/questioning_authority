@@ -38,5 +38,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'swagger-docs'
   s.add_development_dependency 'webmock'
   s.add_development_dependency 'rspec_junit_formatter'
-  s.add_development_dependency 'mail', '>= 2.8.0.rc1'
+  # hypothesis: we can get rid of this:
+  # s.add_development_dependency 'mail', '>= 2.8.0.rc1'
 end
