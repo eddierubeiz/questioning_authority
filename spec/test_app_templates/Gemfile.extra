@@ -2,4 +2,6 @@
 
 group :development do
   gem 'linkeddata'
+  gem 'mail', '>= 2.8.0.rc1'
+  gem 'psych', '< 4'
 end
