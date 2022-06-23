@@ -2,10 +2,6 @@ source "https://rubygems.org"
 
 gemspec path: File.expand_path('..', __FILE__)
 
-# Just adding this to all versions for now.
-# We can narrow it down to just ruby 3.1 later.
-gem 'net-smtp'
-
 group :development, :test do
   gem 'coveralls', require: false
   gem 'simplecov', require: false
@@ -39,6 +35,11 @@ else
   end
 
   case ENV['RAILS_VERSION']
+  when /^6\.1\./
+    # opt into mail 2.8.0.rc1 so we get extra dependencies required for rails 6.1
+    # Once mail 2.8.0 final is released this will not be required.
+    # https://github.com/mikel/mail/pull/1472
+    gem "mail", ">= 2.8.0.rc1"
   when /^5.[12]/
     gem 'sass-rails', '~> 5.0'
   when /^4.2/
