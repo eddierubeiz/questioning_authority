@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rdf'
 
   # the hyrax style guide is based on `bixby`. see `.rubocop.yml`
-  s.add_development_dependency 'bixby', '~> 3.0.0'
+  s.add_development_dependency 'bixby', '~> 5.0', '>= 5.0.2' # bixby 5 briefly dropped Ruby 2.5
   s.add_development_dependency 'rails', '!=5.2.0', '!=5.2.1', '!=5.2.2'
   s.add_development_dependency 'byebug'
   s.add_development_dependency 'engine_cart', '~> 2.0'
@@ -34,7 +34,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'pry'
   s.add_development_dependency 'pry-byebug'
   s.add_development_dependency 'rspec-rails'
-  s.add_development_dependency 'simplecov'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'swagger-docs'
   s.add_development_dependency 'webmock'
