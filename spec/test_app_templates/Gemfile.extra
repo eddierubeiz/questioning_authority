@@ -12,5 +12,9 @@ group :development do
     # See: https://bugs.ruby-lang.org/issues/17866
     # See also: https://stackoverflow.com/questions/71191685/visit-psych-nodes-alias-unknown-alias-default-psychbadalias/71192990#71192990
     gem 'psych', '< 4'
+    # opt into mail 2.8.0.rc1 so we get extra dependencies required for rails 6.1
+    # Once mail 2.8.0 final is released this will not be required.
+    # https://github.com/mikel/mail/pull/1472
+    gem "mail", ">= 2.8.0.rc1"
   end
 end
